@@ -1,0 +1,171 @@
+{
+   "basePath": "http://localhost:8080/RestApiDoc-example",
+   "apis": [{
+      "methods": [
+         {
+            "headers": [],
+            "bodyobject": null,
+            "jsondocId": "41df7708-1320-49d1-bc99-ebf0df6f831a",
+            "consumes": [],
+            "response": {
+               "mapKeyObject": "",
+               "jsondocId": "740a9663-6f1a-4cd6-8e93-f4d70f682b92",
+               "mapValueObject": "",
+               "object": "subscriber"
+            },
+            "pathparameters": [{
+               "jsondocId": "cb3fbdce-b185-4679-8392-027a43c29557",
+               "description": "Provides subscriber name",
+               "name": "name",
+               "allowedvalues": [],
+               "format": "",
+               "required": "true",
+               "type": "String"
+            }],
+            "apierrors": [
+               {
+                  "jsondocId": "4a00f813-b042-4b97-a12d-5038d3217005",
+                  "description": "Bad Request: missing parameters or bad message format",
+                  "code": "400"
+               },
+               {
+                  "jsondocId": "4071785a-fa00-4bb3-b517-04d6cae70e15",
+                  "description": "Unauthorized: must be auth",
+                  "code": "401"
+               },
+               {
+                  "jsondocId": "7628996a-2888-48ee-aeb5-3cef2644391d",
+                  "description": "Forbidden: role error",
+                  "code": "403"
+               },
+               {
+                  "jsondocId": "a98daef6-5226-4583-bd4e-d81bc58a0ca4",
+                  "description": "Object not found",
+                  "code": "404"
+               }
+            ],
+            "verb": "GET",
+            "description": "Gets required subscriber details",
+            "queryparameters": [],
+            "path": "/subscribers/{id}",
+            "produces": ["application/json"],
+            "methodName": "show"
+         },
+         {
+            "headers": [],
+            "bodyobject": null,
+            "jsondocId": "0f4b7b59-b27d-40b5-b81f-118d5a37634b",
+            "consumes": [],
+            "response": {
+               "mapKeyObject": "",
+               "jsondocId": "cf50ea86-30c2-4ea0-ba5b-4eb94aa85376",
+               "mapValueObject": "",
+               "object": "subscriber"
+            },
+            "pathparameters": [{
+               "jsondocId": "346b07be-7b98-4bb8-897b-a3692b3cddf6",
+               "description": "provides subscriber details based on search crieteria",
+               "name": "name",
+               "allowedvalues": [],
+               "format": "",
+               "required": "true",
+               "type": "String"
+            }],
+            "apierrors": [
+               {
+                  "jsondocId": "e0fe7bf5-99ba-4016-84b0-02b448d54df5",
+                  "description": "Bad Request: missing parameters or bad message format",
+                  "code": "400"
+               },
+               {
+                  "jsondocId": "264a250f-4cfb-43aa-b88e-512a11bf1de0",
+                  "description": "Unauthorized: must be auth",
+                  "code": "401"
+               },
+               {
+                  "jsondocId": "a382d67a-a5e7-4acf-9ce6-453ff5664241",
+                  "description": "Forbidden: role error",
+                  "code": "403"
+               },
+               {
+                  "jsondocId": "78ae20a4-5776-4c49-9e96-5d7aa395dc10",
+                  "description": "Object not found",
+                  "code": "404"
+               }
+            ],
+            "verb": "GET",
+            "description": "returns required subscriber details based on search string",
+            "queryparameters": [],
+            "path": "/search/subscriber/{query}",
+            "produces": ["application/json"],
+            "methodName": "searchSubscriber"
+         },
+         {
+            "headers": [],
+            "bodyobject": {
+               "mapKeyObject": "",
+               "jsondocId": "125ddac6-a7db-4f30-9cf3-dbf66e5937de",
+               "mapValueObject": "",
+               "map": "",
+               "object": "subscriber",
+               "multiple": "Unknow"
+            },
+            "jsondocId": "8879ca58-08ba-4ed2-93d3-b763a65c7ea5",
+            "consumes": ["application/json"],
+            "response": {
+               "mapKeyObject": "",
+               "jsondocId": "042ed791-c73e-40d9-a513-2be98a457f42",
+               "mapValueObject": "",
+               "object": "subscriber"
+            },
+            "pathparameters": [{
+               "jsondocId": "d267b4e4-acfe-4a7f-b6b9-3999553e56e8",
+               "description": "Updates subscriber name and lastname",
+               "name": "name",
+               "allowedvalues": [],
+               "format": "",
+               "required": "true",
+               "type": "String"
+            }],
+            "apierrors": [
+               {
+                  "jsondocId": "03959f4f-89fd-41e0-84ae-34e07f332436",
+                  "description": "Bad Request: missing parameters or bad message format",
+                  "code": "400"
+               },
+               {
+                  "jsondocId": "448f490b-18ab-4cda-b9a8-dd500da352d5",
+                  "description": "Unauthorized: must be auth",
+                  "code": "401"
+               },
+               {
+                  "jsondocId": "6c53e96a-c860-4ab1-9d05-17d9ab1767c2",
+                  "description": "Forbidden: role error",
+                  "code": "403"
+               },
+               {
+                  "jsondocId": "cb6a2242-dac3-4013-9312-0a5fe8ced5e6",
+                  "description": "Object not found",
+                  "code": "404"
+               },
+               {
+                  "jsondocId": "7355a3ca-f473-40a6-80aa-c97f400167c9",
+                  "description": "Object already exist",
+                  "code": "409"
+               }
+            ],
+            "verb": "PUT",
+            "description": "updates required subscriber details",
+            "queryparameters": [],
+            "path": "/subscribers/{id}",
+            "produces": ["application/json"],
+            "methodName": "update"
+         }
+      ],
+      "jsondocId": "9208e224-207a-48b6-bf71-8ee6f3c3fba6",
+      "description": "Methods for managing subscribers",
+      "name": "subscriber services"
+   }],
+   "objects": [],
+   "version": "0.1.1"
+}
