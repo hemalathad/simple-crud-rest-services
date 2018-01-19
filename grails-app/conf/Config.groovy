@@ -148,5 +148,7 @@ log4j.main = {
             "409": "Object already exist"
     ]
 
-
+cors.headers = [
+        'Access-Control-Allow-Origin': 'http://localhost:4200'
+        ]
 

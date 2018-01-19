@@ -5,16 +5,16 @@
          {
             "headers": [],
             "bodyobject": null,
-            "jsondocId": "8ef8238f-763f-4eb2-831a-043af2a62c00",
+            "jsondocId": "9ca81ec8-e7c5-4cea-a801-2614366021e7",
             "consumes": [],
             "response": {
                "mapKeyObject": "",
-               "jsondocId": "05d413d5-5482-4aa9-b871-f6c6cc11fd39",
+               "jsondocId": "e2c7e542-fc47-4668-8118-b16046cda2ca",
                "mapValueObject": "",
                "object": "subscriber"
             },
             "pathparameters": [{
-               "jsondocId": "f5e41aca-bc41-4607-b9e2-4a0a091f050a",
+               "jsondocId": "6870d8ac-f05c-482e-aef3-d6496728a697",
                "description": "Provides subscriber name",
                "name": "name",
                "allowedvalues": [],
@@ -24,22 +24,22 @@
             }],
             "apierrors": [
                {
-                  "jsondocId": "2704a3d0-66c1-4c18-b228-af8531c8f7c6",
+                  "jsondocId": "0303bdd2-6db5-450c-860d-75ffc770c0ce",
                   "description": "Bad Request: missing parameters or bad message format",
                   "code": "400"
                },
                {
-                  "jsondocId": "fcd3b091-4236-407e-8bf8-b91f5687acc1",
+                  "jsondocId": "48613e1c-c14d-4209-9097-9c7131ca7086",
                   "description": "Unauthorized: must be auth",
                   "code": "401"
                },
                {
-                  "jsondocId": "e773cab7-b51c-4128-9484-c83d4d161330",
+                  "jsondocId": "176b3d9e-e427-43e0-810a-c6484c1c6f6b",
                   "description": "Forbidden: role error",
                   "code": "403"
                },
                {
-                  "jsondocId": "508b8a73-63ae-4363-93ce-488483e5e628",
+                  "jsondocId": "b1c85fde-765c-4976-9948-97456fcfc7ff",
                   "description": "Object not found",
                   "code": "404"
                }
@@ -55,22 +55,75 @@
             "headers": [],
             "bodyobject": {
                "mapKeyObject": "",
-               "jsondocId": "ab0759fa-90f6-4562-948e-753913d11985",
+               "jsondocId": "b63ec97d-0bf1-4773-b6d3-a297ba0c49fc",
                "mapValueObject": "",
                "map": "",
                "object": "subscriber",
                "multiple": "Unknow"
             },
-            "jsondocId": "445c0fb2-3549-400c-b2cf-474cf8953c6b",
+            "jsondocId": "cd5ec7e3-8617-48bf-ad1e-2d10dc8da7f7",
             "consumes": ["application/json"],
             "response": {
                "mapKeyObject": "",
-               "jsondocId": "c085c8b6-9da3-4026-bc00-ea19366ebdaf",
+               "jsondocId": "cf8a3b6c-1235-4035-afbc-dac84572d9b2",
+               "mapValueObject": "",
+               "object": "subscriber"
+            },
+            "pathparameters": [],
+            "apierrors": [
+               {
+                  "jsondocId": "bade4388-7987-4b4b-b5c3-9136ec02a7bb",
+                  "description": "Bad Request: missing parameters or bad message format",
+                  "code": "400"
+               },
+               {
+                  "jsondocId": "51e0e21e-6c95-4691-b471-10f1ca908bce",
+                  "description": "Unauthorized: must be auth",
+                  "code": "401"
+               },
+               {
+                  "jsondocId": "a0d6a655-5972-40e2-8514-21ec3691269e",
+                  "description": "Forbidden: role error",
+                  "code": "403"
+               },
+               {
+                  "jsondocId": "8a552f16-52fe-422b-ae42-7ff99d9fb348",
+                  "description": "Object not found",
+                  "code": "404"
+               },
+               {
+                  "jsondocId": "7f7f444d-e7eb-4551-ab40-25174306091d",
+                  "description": "Object already exist",
+                  "code": "409"
+               }
+            ],
+            "verb": "POST",
+            "description": "Used to add  new subscriber  ",
+            "queryparameters": [],
+            "path": "/subscribers",
+            "produces": ["application/json"],
+            "methodName": "save"
+         },
+         {
+            "headers": [],
+            "bodyobject": {
+               "mapKeyObject": "",
+               "jsondocId": "a90e3f59-1526-4a78-b675-af0a98f0793b",
+               "mapValueObject": "",
+               "map": "",
+               "object": "subscriber",
+               "multiple": "Unknow"
+            },
+            "jsondocId": "52363b8a-289f-4475-8057-ad1e1e172e89",
+            "consumes": ["application/json"],
+            "response": {
+               "mapKeyObject": "",
+               "jsondocId": "f8054d6a-8f5a-44c9-8329-7cf44aa16899",
                "mapValueObject": "",
                "object": "subscriber"
             },
             "pathparameters": [{
-               "jsondocId": "bc20358c-48de-4e54-b5d6-20e3f7c0fa87",
+               "jsondocId": "5b4f2e27-df39-47a5-bf9e-f0c27f8dd5aa",
                "description": "Updates subscriber name and lastname",
                "name": "name",
                "allowedvalues": [],
@@ -80,27 +133,27 @@
             }],
             "apierrors": [
                {
-                  "jsondocId": "c8cabce1-21be-4b4a-a6d8-0cc5602b6047",
+                  "jsondocId": "5aa839a4-7648-4fd3-9ade-1780fef4b880",
                   "description": "Bad Request: missing parameters or bad message format",
                   "code": "400"
                },
                {
-                  "jsondocId": "e65af65d-7f0f-42f1-bbf5-77a02bdec9ff",
+                  "jsondocId": "0a2fbab9-0a13-49f5-b7e7-8961f9a54259",
                   "description": "Unauthorized: must be auth",
                   "code": "401"
                },
                {
-                  "jsondocId": "f744dff2-9b22-481e-8497-bc7235bd4e4b",
+                  "jsondocId": "06ab4113-e83b-4462-8f7c-d8ae979c7059",
                   "description": "Forbidden: role error",
                   "code": "403"
                },
                {
-                  "jsondocId": "05ab23b5-4d82-483f-acb7-270bb27994de",
+                  "jsondocId": "96bda230-bc4d-4013-b8ac-7466054e3415",
                   "description": "Object not found",
                   "code": "404"
                },
                {
-                  "jsondocId": "294dc0a9-ffe3-4c90-865f-c57892825610",
+                  "jsondocId": "45fd80ea-13d7-42ae-ab09-e8ea33a15701",
                   "description": "Object already exist",
                   "code": "409"
                }
@@ -115,16 +168,16 @@
          {
             "headers": [],
             "bodyobject": null,
-            "jsondocId": "4e1a0013-d66a-4ce2-9b92-43e8e8eb12d9",
+            "jsondocId": "1a38ee8d-441c-455c-937a-d8569e8fc9c6",
             "consumes": [],
             "response": {
                "mapKeyObject": "",
-               "jsondocId": "19361770-27c0-4242-8d72-a31a4b52bbf9",
+               "jsondocId": "b8463357-5119-4ec3-95be-4473c87261cb",
                "mapValueObject": "",
                "object": "subscriber"
             },
             "pathparameters": [{
-               "jsondocId": "928484d6-271b-44b6-8280-560a0a948baf",
+               "jsondocId": "580ae0c1-b726-477f-b3c9-8d0b33e3bb95",
                "description": "provides subscriber details based on search crieteria",
                "name": "name",
                "allowedvalues": [],
@@ -134,22 +187,22 @@
             }],
             "apierrors": [
                {
-                  "jsondocId": "f75994dd-0dff-4e6b-9ca6-cf69a4e07558",
+                  "jsondocId": "f169fdd1-b175-4288-93cf-0ad6f1c04907",
                   "description": "Bad Request: missing parameters or bad message format",
                   "code": "400"
                },
                {
-                  "jsondocId": "4268131e-c361-4248-9d1c-bf89ded7d6f7",
+                  "jsondocId": "f925b435-b70e-439c-927f-d88119afff1a",
                   "description": "Unauthorized: must be auth",
                   "code": "401"
                },
                {
-                  "jsondocId": "f8336d41-5bf2-4a79-a981-d6858188624d",
+                  "jsondocId": "de6db980-d1a4-4e9b-8384-fbd52fc5b022",
                   "description": "Forbidden: role error",
                   "code": "403"
                },
                {
-                  "jsondocId": "e902acc2-9260-4b19-a175-b992bb7d4b38",
+                  "jsondocId": "8f0c9f5d-390b-4e9b-87c2-3d8e56cf7fe6",
                   "description": "Object not found",
                   "code": "404"
                }
@@ -162,7 +215,7 @@
             "methodName": "searchSubscriber"
          }
       ],
-      "jsondocId": "8d7649fe-2d24-4981-8fa8-0c267c35dc93",
+      "jsondocId": "ff63f649-832a-4a44-8d70-78dacd7d0e83",
       "description": "Methods for managing subscribers",
       "name": "subscriber services"
    }],

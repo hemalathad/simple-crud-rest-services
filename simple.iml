@@ -193,6 +193,8 @@
           <root url="jar://$MAVEN_REPOSITORY$/org/gebish/geb-ast/0.10.0/geb-ast-0.10.0.jar!/" />
           <root url="jar://$MAVEN_REPOSITORY$/org/gebish/geb-core/0.10.0/geb-core-0.10.0.jar!/" />
           <root url="jar://$MAVEN_REPOSITORY$/org/grails/grails-datastore-rest-client/1.0.0.RELEASE/grails-datastore-rest-client-1.0.0.RELEASE.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/3.0.7.RELEASE/spring-security-web-3.0.7.RELEASE.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/3.0.7.RELEASE/spring-security-core-3.0.7.RELEASE.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>

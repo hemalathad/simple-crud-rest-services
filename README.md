@@ -6,8 +6,9 @@ two methods. One is using @Resource annotation on top of domain class
 and second one is by extending Rest Controller.
 It has one custom rest end point which gives search string based result.
 
-2. Rest api related document can be viewed as http://localhost:8080/RestApiDoc-example
+2. Rest api related document can be viewed as rest-api-doc file  in project root.
+
 Pre requisites:
 1. SQL server running on default port 1433
-2. Data bases to be mentioned in datasources.grrovy
+2. Data bases to be mentioned in datasources.groovy
 
